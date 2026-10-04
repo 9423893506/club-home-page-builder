@@ -1,10 +1,14 @@
 import { Analytics } from '@vercel/analytics/next'
 import type { Metadata, Viewport } from 'next'
+import { Nunito } from 'next/font/google'
 import './globals.css'
 
+const nunito = Nunito({ subsets: ['latin'], variable: '--font-nunito' })
+
 export const metadata: Metadata = {
-  title: 'v0 App',
-  description: 'Created with v0',
+  title: 'Atharva Haribhau Dagwar | Underwater Exploration Robot Project',
+  description:
+    'An engineering undergraduate looking for students to work on a project building robots that explore underwater areas of the ocean.',
   generator: 'v0.app',
   icons: {
     icon: [
@@ -26,11 +30,8 @@ export const metadata: Metadata = {
 }
 
 export const viewport: Viewport = {
-  colorScheme: 'light dark',
-  themeColor: [
-    { media: '(prefers-color-scheme: light)', color: 'white' },
-    { media: '(prefers-color-scheme: dark)', color: 'black' },
-  ],
+  colorScheme: 'light',
+  themeColor: '#0369a1',
 }
 
 export default function RootLayout({
@@ -39,8 +40,8 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
-      <body className="antialiased">
+    <html lang="en" className={`light ${nunito.variable}`}>
+      <body className="font-sans antialiased">
         {children}
         {process.env.NODE_ENV === 'production' && <Analytics />}
       </body>
