@@ -48,7 +48,7 @@ export function Hero() {
       <nav className="relative mx-auto flex max-w-5xl items-center justify-between px-5 py-5">
         <span className="flex items-center gap-2 font-extrabold">
           <Waves className="size-5" aria-hidden="true" />
-          Underwater Robots Project
+          {site.shortTitle}
         </span>
         <a
           href="#join"
@@ -62,7 +62,10 @@ export function Hero() {
         <p className="rounded-full bg-white/15 px-3 py-1 text-sm font-semibold">
           Looking for students to team up
         </p>
-        <h1 className="text-balance text-4xl font-black leading-tight md:text-6xl">{site.name}</h1>
+        <div className="flex flex-col gap-3">
+          <h1 className="text-balance text-4xl font-black leading-tight md:text-6xl">{site.title}</h1>
+          <p className="text-base font-semibold text-white/85 md:text-lg">A student project by {site.name}</p>
+        </div>
         <p className="max-w-2xl text-pretty text-lg leading-relaxed text-white/90 md:text-xl">
           {site.whatWeDo}
         </p>
