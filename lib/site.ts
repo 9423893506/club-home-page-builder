@@ -8,15 +8,4 @@ export const site = {
   contactEmail: 'atharvadagwar94@gmail.com',
 }
 
-export type Palette = {
-  name: string
-  hex: string
-}
-
-export const palettes: Palette[] = [
-  { name: 'Ocean Blue', hex: '#0369a1' },
-  { name: 'Lagoon Teal', hex: '#0f766e' },
-  { name: 'Electric Violet', hex: '#7c3aed' },
-  { name: 'Kelp Green', hex: '#15803d' },
-  { name: 'Coral Pink', hex: '#e11d48' },
-]
+export const brandColor = '#e11d48'
