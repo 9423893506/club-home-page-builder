@@ -14,7 +14,7 @@ const bubbles = [
 
 export function Hero() {
   return (
-    <header className="relative overflow-hidden bg-(--brand) text-white transition-colors duration-500">
+    <header className="relative overflow-hidden bg-linear-to-br from-[#c2410c] via-(--brand) to-[#f59e0b] text-white">
       <div aria-hidden="true" className="pointer-events-none absolute inset-0">
         {bubbles.map((b, i) => (
           <span
