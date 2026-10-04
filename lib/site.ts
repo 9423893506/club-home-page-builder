@@ -5,8 +5,7 @@ export const site = {
   meetingDate: '8 September 2027',
   meetingDateISO: '2027-09-08T00:00:00',
   meetingPlace: 'Online, on Zoom or Google Meet',
-  // Add your real email address here, e.g. 'you@example.com'
-  contactEmail: '',
+  contactEmail: 'atharvadagwar94@gmail.com',
 }
 
 export type Palette = {
@@ -17,7 +16,7 @@ export type Palette = {
 export const palettes: Palette[] = [
   { name: 'Ocean Blue', hex: '#0369a1' },
   { name: 'Lagoon Teal', hex: '#0f766e' },
-  { name: 'Deep Indigo', hex: '#4338ca' },
+  { name: 'Electric Violet', hex: '#7c3aed' },
   { name: 'Kelp Green', hex: '#15803d' },
-  { name: 'Sunset Coral', hex: '#c2410c' },
+  { name: 'Coral Pink', hex: '#e11d48' },
 ]

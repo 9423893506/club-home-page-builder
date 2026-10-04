@@ -19,10 +19,10 @@ export function Join() {
         {email ? (
           <a
             href={`mailto:${email}`}
-            className="flex items-center gap-2 rounded-full bg-(--brand) px-7 py-3 font-bold text-white shadow-md transition-transform hover:scale-105"
+            className="flex max-w-full items-center gap-2 rounded-full bg-(--brand) px-5 py-3 font-bold text-white shadow-md transition-transform hover:scale-105 sm:px-7"
           >
-            <Mail className="size-5" aria-hidden="true" />
-            {email}
+            <Mail className="size-5 shrink-0" aria-hidden="true" />
+            <span className="break-all">{email}</span>
           </a>
         ) : (
           <p className="flex items-center gap-2 rounded-full bg-white px-6 py-3 font-bold text-slate-500">
