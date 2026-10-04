@@ -8,4 +8,4 @@ export const site = {
   contactEmail: 'atharvadagwar94@gmail.com',
 }
 
-export const brandColor = '#ea580c'
+export const brandColor = '#b45309'

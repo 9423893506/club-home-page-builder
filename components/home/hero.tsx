@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import { ArrowDown, Waves } from 'lucide-react'
 import { site } from '@/lib/site'
 
@@ -14,7 +15,20 @@ const bubbles = [
 
 export function Hero() {
   return (
-    <header className="relative overflow-hidden bg-linear-to-br from-[#c2410c] via-(--brand) to-[#f59e0b] text-white">
+    <header className="relative overflow-hidden bg-slate-900 text-white">
+      <Image
+        src="/images/sunset-robotics-lab.png"
+        alt=""
+        fill
+        priority
+        sizes="100vw"
+        className="object-cover object-[70%_center]"
+      />
+      <div
+        aria-hidden="true"
+        className="absolute inset-0 bg-linear-to-r from-slate-950/80 via-slate-950/45 to-slate-950/10"
+      />
+      <div aria-hidden="true" className="absolute inset-x-0 top-0 h-24 bg-linear-to-b from-slate-950/50 to-transparent" />
       <div aria-hidden="true" className="pointer-events-none absolute inset-0">
         {bubbles.map((b, i) => (
           <span
