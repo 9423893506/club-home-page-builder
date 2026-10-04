@@ -6,7 +6,7 @@ import './globals.css'
 const nunito = Nunito({ subsets: ['latin'], variable: '--font-nunito' })
 
 export const metadata: Metadata = {
-  title: 'Dive Deeper: Build Robots That Explore the Ocean | Atharva Haribhau Dagwar',
+  title: 'Into the Blue: Robots for Ocean Exploration | Atharva Haribhau Dagwar',
   description:
     'An engineering undergraduate looking for students to work on a project building robots that explore underwater areas of the ocean.',
   generator: 'v0.app',
